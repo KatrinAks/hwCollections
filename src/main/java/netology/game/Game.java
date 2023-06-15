@@ -28,10 +28,10 @@ public class Game {
         Player player2 = findByName(playerName2);
 
 
-        if (playerName1 == null) {
+        if (player1 == null) {
             throw new NotRegisteredException(playerName1);
         }
-        if (playerName2 == null) {
+        if (player2 == null) {
             throw new NotRegisteredException(playerName2);
         }
 
