@@ -8,24 +8,24 @@ public class GameTest {
     @Test
     public void shouldFindStrongPlayer() {
 
-        Player playerName1 = new Player( 11, "Иван", 10);
+        Player playerName1 = new Player(11, "Иван", 10);
         Player playerName2 = new Player(22, "Денис", 20);
 
         Game game = new Game();
-            game.register(playerName1);
-            game.register(playerName2);
+        game.register(playerName1);
+        game.register(playerName2);
 
-            int expected = 1;
-            int actual = game.round("Денис", "Иван");
+        int expected = 1;
+        int actual = game.round("Денис", "Иван");
 
-            Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
 
-        }
+    }
 
     @Test
     public void shouldFindWeakPlayer() {
 
-        Player playerName1 = new Player( 11, "Иван", 10);
+        Player playerName1 = new Player(11, "Иван", 10);
         Player playerName2 = new Player(22, "Денис", 20);
 
         Game game = new Game();
@@ -42,7 +42,7 @@ public class GameTest {
     @Test
     public void shouldFindEqualsPlayer() {
 
-        Player playerName1 = new Player( 11, "Иван", 10);
+        Player playerName1 = new Player(11, "Иван", 10);
         Player playerName2 = new Player(22, "Денис", 10);
 
         Game game = new Game();
@@ -59,7 +59,7 @@ public class GameTest {
     @Test
     public void shouldFindNotOnePlayer() {
 
-        Player playerName1 = new Player( 11, "Иван", 10);
+        Player playerName1 = new Player(11, "Иван", 10);
         Player playerName2 = new Player(22, "Денис", 10);
 
         Game game = new Game();
@@ -76,7 +76,7 @@ public class GameTest {
     @Test
     public void shouldFindNotTwoPlayer() {
 
-        Player playerName1 = new Player( 11, "Иван", 10);
+        Player playerName1 = new Player(11, "Иван", 10);
         Player playerName2 = new Player(22, "Денис", 10);
 
         Game game = new Game();
@@ -93,7 +93,7 @@ public class GameTest {
     @Test
     public void shouldFindNotExistsPlayers() {
 
-        Player playerName1 = new Player( 11, "Иван", 10);
+        Player playerName1 = new Player(11, "Иван", 10);
         Player playerName2 = new Player(22, "Денис", 10);
 
         Game game = new Game();

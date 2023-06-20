@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class Game {
 
     ArrayList<Player> players = new ArrayList<>();
@@ -13,14 +12,14 @@ public class Game {
         players.add(player);
     }
 
-        public Player findByName(String name) {
-            for (Player player : players) {
-                if (player.getName().equals(name)) {
+    public Player findByName(String name) {
+        for (Player player : players) {
+            if (player.getName().equals(name)) {
 
-                    return player;
-                }
+                return player;
             }
-            return null;
+        }
+        return null;
     }
 
     public int round(String playerName1, String playerName2) {

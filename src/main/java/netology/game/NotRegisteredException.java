@@ -1,6 +1,6 @@
 package netology.game;
 
-public class NotRegisteredException extends RuntimeException{
+public class NotRegisteredException extends RuntimeException {
 
     public NotRegisteredException(String playerName) {
 
